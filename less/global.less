@@ -1,0 +1,50 @@
+// General Styles
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  font-family: @orbitron;
+  color: @space-blue;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: @orbitron;
+  color: @space-blue;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto; 
+}
+
+.container::after {
+  content: "";
+  background: url('../img/starfield.png') center center;
+  opacity: 0.95;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
