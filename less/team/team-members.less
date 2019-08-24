@@ -2,12 +2,75 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     align-content: space-around;
-    height: 90vh;
+    margin: 5% auto;
+
+    @media @phone {
+        flex-direction: column;
+     }
 
     .team-member{ 
         flex-basis: 30%;
+        flex-grow: 1;
         text-align: center;
+
+        @media @tablet {
+            flex-basis: 45%;
+         }
+
+        .profile-pic {
+            margin: 2% auto 0 auto;
+            height: 18rem;
+            width: 18rem;
+            .border(5px);
+            border-radius: 55px;
+        }
+
+        .buddy {
+            .background(url('../../img/buddy.jpg'));
+        }
+
+        .taylor {
+            .background(url('../../img/taylor.png'));
+        }
+
+        .jake {
+            .background(url('../../img/jake.png'));
+        }
+
+        .chris {
+            .background(url('../../img/chris.jpg'));
+        }
+
+        .damico {
+            .background(url('../../img/damico.jpg'));
+        }
+
+        .landon {
+            .background(url('../../img/landon.png'));
+        }
+
+        .about-wrap {
+            .team-title {
+                padding: 3.5% 10%;
+            }
+            .team-about {
+                padding: 0 10% 2%;
+            }
+            .social-wrap{
+                margin-bottom: 10%;
+                font-size: 2.5rem;
+                a {
+                    padding: 0 5%;
+                    text-decoration: none;
+                    color: @space-white;
+                }
+
+                a:hover {
+                    color: @space-black;
+                }
+            }
+        }
     }
 }
