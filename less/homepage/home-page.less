@@ -9,10 +9,16 @@ main {
     .now {
         color:@space-blue;
         font-size: 5.0rem;
+        @media @phone {
+            font-size:3.0rem;
+        }
     }
 
     .logo {
         width: 50%;
+        @media @phone {
+            width:60%;
+        }
     }
 
     .button {
@@ -22,10 +28,19 @@ main {
         font-size: 4rem;
         margin-bottom: 5%;
         text-align: center;
+        @media @phone {
+            font-size:3rem;
+            border-radius:1.5rem;
+            padding:2.0rem 10.0rem;
+        }
     }
     
     .home-text {
         margin-bottom: 2.5%;
         font-size:3.5rem;
+        @media @phone {
+            font-size:2.5rem;
+            text-align:center;
+        }
     }
 }
