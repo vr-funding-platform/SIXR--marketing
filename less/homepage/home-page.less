@@ -2,13 +2,15 @@ main {
     display:flex;
     flex-direction:column;
     align-items: center;
-    justify-content: space-between;
-    height: 95vh;
+    justify-content: space-around;
+    height: 100vh;
     padding: 5%;
+    overflow: hidden;
 
     .now {
         color:@space-blue;
         font-size: 5.0rem;
+        margin-top: 1.5%;
         @media @phone {
             font-size:3.0rem;
         }
@@ -26,7 +28,7 @@ main {
         border-radius:2.5rem;
         padding: 2.0rem 13.0rem;
         font-size: 4rem;
-        margin-bottom: 5%;
+        margin-bottom: 3%;
         text-align: center;
         @media @phone {
             font-size:3rem;
@@ -36,8 +38,9 @@ main {
     }
     
     .home-text {
-        margin-bottom: 2.5%;
+        margin-bottom: 1.5%;
         font-size:3.5rem;
+        text-align: center;
         @media @phone {
             font-size:2.5rem;
             text-align:center;
