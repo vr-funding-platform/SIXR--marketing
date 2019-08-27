@@ -10,6 +10,11 @@ html {
 html, body {
   font-family: @orbitron;
   color: @space-blue;
+
+  @media @tablet {
+    .background(url('../img/sixr-bg-image.jpg'));
+    min-height: 100%;
+  }
 }
 
 h1, h2, h3, h4, h5 {
@@ -35,16 +40,3 @@ p {
   width: 100%;
   margin: 0 auto; 
 }
-
-.container::after {
-  content: "";
-  background: url('../img/starfield.png') center center;
-  opacity: 0.95;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}
-

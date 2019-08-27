@@ -137,6 +137,13 @@ body {
   font-family: 'Orbitron';
   color: #08c6e7;
 }
+@media (max-width: 800px) {
+  html,
+  body {
+    background: center / cover no-repeat url('../img/sixr-bg-image.jpg');
+    min-height: 100%;
+  }
+}
 h1,
 h2,
 h3,
@@ -160,28 +167,54 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.container::after {
-  content: "";
-  background: url('../img/starfield.png') center center;
-  opacity: 0.95;
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+@media (max-width: 800px) {
+  .fullscreen-bg {
+    display: none;
+  }
+}
+.fullscreen-bg .fullscreen-bg_video {
+  position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg .fullscreen-bg_video {
+    height: 300%;
+    top: -100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg .fullscreen-bg_video {
+    width: 300%;
+    left: -100%;
+  }
 }
 .menu-overlay {
-  border: 2px solid #08c6e7;
   width: 20%;
+  height: 100%;
   margin-top: 0;
-  left: 0;
+  left: 80%;
   position: absolute;
+}
+.menu-overlay button {
+  position: absolute;
+  left: 75%;
 }
 .menu-overlay .menu-items {
   color: #ffffff;
   font-size: 2rem;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -197,13 +230,15 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  height: 95vh;
+  justify-content: space-around;
+  height: 100vh;
   padding: 5%;
+  overflow: hidden;
 }
 main .now {
   color: #08c6e7;
   font-size: 5rem;
+  margin-top: 1.5%;
 }
 @media (max-width: 500px) {
   main .now {
@@ -223,7 +258,7 @@ main .button {
   border-radius: 2.5rem;
   padding: 2rem 13rem;
   font-size: 4rem;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   text-align: center;
 }
 @media (max-width: 500px) {
@@ -234,8 +269,9 @@ main .button {
   }
 }
 main .home-text {
-  margin-bottom: 2.5%;
+  margin-bottom: 1.5%;
   font-size: 3.5rem;
+  text-align: center;
 }
 @media (max-width: 500px) {
   main .home-text {
