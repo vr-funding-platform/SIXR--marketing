@@ -11,13 +11,22 @@
     </head>
     <body>
         <div class="container">
-            <div class="menu-overlay hidden">
-                <button class="hamburger hamburger--emphatic is-active" type="button">
+
+            <div class="fullscreen-bg">
+                <video loop muted autoplay poster="img/sixr-bg-image.jpg" class="fullscreen-bg_video">
+                    <source src="vids/media.io_sixr-bg-vid.webm" type="video/webm">
+                    <source src="vids/sixr-bg-vid.mp4" type="video/mp4">
+                    <source src="vids/sixr-bg-vid.ogg" type="video/ogg">
+                </video>
+            </div>
+            
+            <div class="menu-overlay" id="menu-overlay">
+                <button class="hamburger hamburger--emphatic" type="button">
                     <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
                     </span>
                 </button>
-                <ul class="menu-items">
+                <ul class="menu-items" id="menu-items">
                     <li class="menu-item"><a href="#">Home</a></li>
                     <li class="menu-item"><a href="#">Team</a></li>
                     <li class="menu-item"><a href="#">About Us</a></li>
@@ -30,9 +39,10 @@
                 <img class="logo" src="img/logo.png" alt="SIXR logo"/>
                 <div class="button">Enter</div>
                 <h2 class="home-text">Welcome To The Future</h2>
-                <h2 class="home-text">Turning Virtual Reality Into Reality</h2>
+                <h2 class="home-text">Turning Virtual Reality <br/> Into True Reality</h2>
                 
             </main>
         </div>
+        <script src="javascript/script.js"></script>
     </body>
 </html>
