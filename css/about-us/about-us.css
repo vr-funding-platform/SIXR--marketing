@@ -233,6 +233,9 @@ main p .bold {
   font-weight: bold;
   color: #ffffff;
 }
+main p .bold {
+  font-weight: bold;
+}
 footer {
   display: flex;
   justify-content: space-around;

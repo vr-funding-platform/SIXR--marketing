@@ -203,9 +203,9 @@ p {
 .menu-overlay {
   width: 20%;
   height: 100%;
-  margin-top: 4rem;
   left: 80%;
   position: absolute;
+  padding: 4rem;
 }
 .menu-overlay button {
   position: absolute;
@@ -213,7 +213,7 @@ p {
 }
 .menu-overlay .menu-items {
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 4rem;
   display: none;
   flex-direction: column;
   justify-content: space-around;
