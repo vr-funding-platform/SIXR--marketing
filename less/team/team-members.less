@@ -4,7 +4,7 @@ main {
     justify-content: center;
     align-items: flex-start;
     align-content: space-around;
-    margin: 5% auto;
+    margin: 4.2% auto;
 
     @media @phone {
         flex-direction: column;
@@ -14,17 +14,22 @@ main {
         flex-basis: 30%;
         flex-grow: 1;
         text-align: center;
+        margin-bottom: 1%;
 
         @media @tablet {
             flex-basis: 45%;
          }
 
+         h2 {
+             font-weight: medium;
+         }
+
         .profile-pic {
             margin: 2% auto 0 auto;
-            height: 18rem;
-            width: 18rem;
-            .border(5px);
-            border-radius: 55px;
+            height: 20.2rem;
+            width: 20.2rem;
+            .border(6.5px);
+            border-radius: 60px;
         }
 
         .buddy {
@@ -54,9 +59,13 @@ main {
         .about-wrap {
             .team-title {
                 padding: 3.5% 10%;
+                color: #2BD9F7;
+                font-weight: bold;
             }
             .team-about {
-                padding: 0 10% 2%;
+                padding: 0 10% 2.2%;
+                color: @space-white;
+                font-size: 1.7rem;
             }
             .social-wrap{
                 margin-bottom: 10%;

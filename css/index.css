@@ -203,9 +203,9 @@ p {
 .menu-overlay {
   width: 20%;
   height: 100%;
-  margin-top: 0;
   left: 80%;
   position: absolute;
+  padding: 4rem;
 }
 .menu-overlay button {
   position: absolute;
@@ -213,7 +213,7 @@ p {
 }
 .menu-overlay .menu-items {
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 4rem;
   display: none;
   flex-direction: column;
   justify-content: space-around;
@@ -238,7 +238,6 @@ main {
 main .now {
   color: #08c6e7;
   font-size: 5rem;
-  margin-top: 1.5%;
 }
 @media (max-width: 500px) {
   main .now {
@@ -254,12 +253,13 @@ main .logo {
   }
 }
 main .button {
-  border: 2px solid #08c6e7;
+  border: 4px solid #08c6e7;
   border-radius: 2.5rem;
-  padding: 2rem 13rem;
-  font-size: 4rem;
+  padding: 3.1rem 13rem;
+  font-size: 2.7rem;
   margin-bottom: 3%;
   text-align: center;
+  color: white;
 }
 @media (max-width: 500px) {
   main .button {
@@ -278,4 +278,15 @@ main .home-text {
     font-size: 2.5rem;
     text-align: center;
   }
+}
+main .realblack {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.company-logo {
+  height: 10rem;
+  width: 10rem;
+  position: absolute;
+  left: 0;
+  top: 0;
 }

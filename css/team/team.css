@@ -136,7 +136,6 @@ html,
 body {
   font-family: 'Orbitron';
   color: #08c6e7;
-  background: center / cover no-repeat url('../../img/night-sky.jpg');
 }
 h1,
 h2,
@@ -147,11 +146,12 @@ h5 {
   color: #ffffff;
 }
 h1 {
-  font-size: 3.6rem;
+  font-size: 5.2rem;
   color: #08c6e7;
+  font-family: 'Audiowide';
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 2.6rem;
 }
 h3 {
   font-size: 2.8rem;
@@ -167,13 +167,48 @@ footer {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 header .company-logo {
   height: 10rem;
   width: 10rem;
 }
 header h1 {
-  align-self: flex-end;
+  padding-top: 0.5rem;
+  padding-right: 3rem;
+}
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+@media (max-width: 800px) {
+  .fullscreen-bg {
+    display: none;
+  }
+}
+.fullscreen-bg .fullscreen-bg_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg .fullscreen-bg_video {
+    height: 300%;
+    top: -100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg .fullscreen-bg_video {
+    width: 300%;
+    left: -100%;
+  }
 }
 main {
   display: flex;
@@ -181,7 +216,7 @@ main {
   justify-content: center;
   align-items: flex-start;
   align-content: space-around;
-  margin: 5% auto;
+  margin: 4.2% auto;
 }
 @media (max-width: 500px) {
   main {
@@ -192,18 +227,22 @@ main .team-member {
   flex-basis: 30%;
   flex-grow: 1;
   text-align: center;
+  margin-bottom: 1%;
 }
 @media (max-width: 800px) {
   main .team-member {
     flex-basis: 45%;
   }
 }
+main .team-member h2 {
+  font-weight: medium;
+}
 main .team-member .profile-pic {
   margin: 2% auto 0 auto;
-  height: 18rem;
-  width: 18rem;
-  border: 5px solid #079cb6;
-  border-radius: 55px;
+  height: 20.2rem;
+  width: 20.2rem;
+  border: 6.5px solid #057285;
+  border-radius: 60px;
 }
 main .team-member .buddy {
   background: center / cover no-repeat url('../../img/buddy.jpg');
@@ -225,9 +264,13 @@ main .team-member .landon {
 }
 main .team-member .about-wrap .team-title {
   padding: 3.5% 10%;
+  color: #2BD9F7;
+  font-weight: bold;
 }
 main .team-member .about-wrap .team-about {
-  padding: 0 10% 2%;
+  padding: 0 10% 2.2%;
+  color: #ffffff;
+  font-size: 1.7rem;
 }
 main .team-member .about-wrap .social-wrap {
   margin-bottom: 10%;

@@ -23,11 +23,15 @@ const onClick = () => {
         hamburger.classList.toggle('is-active');
         menuOverlay.style.border = '2px solid #08c6e7';
         menuItems.style.display = 'flex';
+        menuOverlay.style.background = 'black';
+        menuOverlay.style.opacity = '0.5';
     }else{
         timesClicked--;
         hamburger.classList.toggle('is-active');
         menuOverlay.style.border = 'none';
         menuItems.style.display = 'none';
+        menuOverlay.style.background = 'inherit';
+        menuOverlay.style.opacity = '1';
     }
 
 }
