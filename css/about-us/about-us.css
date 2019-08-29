@@ -189,6 +189,9 @@ main p {
 main p .white-text {
   color: #ffffff;
 }
+main p .bold {
+  font-weight: bold;
+}
 footer {
   display: flex;
   justify-content: space-around;
