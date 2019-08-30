@@ -10,7 +10,11 @@ html {
 html, body {
   font-family: @orbitron;
   color: @space-blue;
-  // .background(url('../../img/night-sky.jpg'));
+
+  @media @tablet {
+    .background(url('../../img/sixr-bg-image.jpg'));
+    min-height: 100%;
+  }
 }
 
 h1, h2, h3, h4, h5 {

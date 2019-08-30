@@ -8,6 +8,7 @@ main {
 
     @media @phone {
         flex-direction: column;
+        align-items: center;
      }
 
     .team-member{ 
@@ -26,8 +27,8 @@ main {
 
         .profile-pic {
             margin: 2% auto 0 auto;
-            height: 20.2rem;
-            width: 20.2rem;
+            height: 26rem;
+            width: 26rem;
             .border(6.5px);
             border-radius: 60px;
         }
@@ -41,7 +42,9 @@ main {
         }
 
         .jake {
-            .background(url('../../img/jake.png'));
+            background: center / cover no-repeat url('../../img/jake4.png');
+            background-position-y:40%;
+            background-size: 117%;
         }
 
         .chris {
@@ -77,7 +80,7 @@ main {
                 }
 
                 a:hover {
-                    color: @space-black;
+                    color: @space-blue;
                 }
             }
         }

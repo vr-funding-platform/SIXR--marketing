@@ -1,17 +1,15 @@
 .menu-overlay {
     
     
-    width: 20%;
-    height: 100%;
+    width: 0%;
     left: 80%;
-    position: absolute;
+    height: 100%;
+    position: fixed;
     padding: 4rem;
-    z-index: 33;
 
     button {
-        position: fixed;
-        left: 94%;
-        z-index: 33;
+        position: absolute;
+        left: 75%;
     }
 
     .menu-items {
@@ -22,16 +20,11 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-
-        li {
-            padding: 8rem 0;
-        }
+        height: 100%;
 
         a {
             text-decoration: none;
-            color: @space-blue;
-            font-weight: bold;
-            margin: -5rem 0;
+            color: @galaxy-blue;
         }
 
         a:hover {

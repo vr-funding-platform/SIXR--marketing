@@ -10,40 +10,41 @@
         <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
     </head>
     <body>
+
+            <div class="menu-overlay" id="menu-overlay">
+                    <ul class="menu-items" id="menu-items">
+                        <li class="menu-item"><a href="index.html">Home</a></li>
+                        <li class="menu-item"><a href="team.html">Team</a></li>
+                        <li class="menu-item"><a href="about-us.html">About Us</a></li>
+                    </ul>
+                </div>
+                        
+                <header>
+                    <button class="hamburger hamburger--emphatic" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                    <h1 id='heading'>THE FUTURE IS NOW</h1>
+                    <img class="company-logo" src="img/logo-sm.png" alt="company logo">
+                </header>
+        
+                <div class="fullscreen-bg">
+                    <video loop muted autoplay poster="img/sixr-bg-image.jpg" class="fullscreen-bg_video">
+                        <source src="vids/media.io_sixr-bg-vid.webm" type="video/webm">
+                        <source src="vids/sixr-bg-vid.mp4" type="video/mp4">
+                        <source src="vids/sixr-bg-vid.ogg" type="video/ogg">
+                    </video>
+                </div>
         <div class="container">
 
-            <div class="fullscreen-bg">
-                <video loop muted autoplay poster="img/sixr-bg-image.jpg" class="fullscreen-bg_video">
-                    <source src="vids/media.io_sixr-bg-vid.webm" type="video/webm">
-                    <source src="vids/sixr-bg-vid.mp4" type="video/mp4">
-                    <source src="vids/sixr-bg-vid.ogg" type="video/ogg">
-                </video>
-            </div>
-            
-            <div class="menu-overlay" id="menu-overlay">
-                <button class="hamburger hamburger--emphatic" type="button">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-                <ul class="menu-items" id="menu-items">
-                    <li class="menu-item"><a href="index.html">Home</a></li>
-                    <li class="menu-item"><a href="team.html">Team</a></li>
-                    <li class="menu-item"><a href="about-us.html">About Us</a></li>
-                </ul>
-            </div>
-
-
-            <img class="company-logo" src="img/logo-sm.png" alt="company logo">
             <main>
-                <h1 class="now">THE FUTURE IS NOW</h1>
                 <img class="logo" src="img/logo.png" alt="SIXR logo"/>
-                <div class="button">ENTER</div>
-                <h2 class="home-text"></h2>
+                <div class="button"><p><a href="https://sixrfund.netlify.com/">ENTER</a></p></div>
                 <h2 class="home-text">TURN VIRTUAL REALITY INTO <span class="realblack">REALITY</span></h2>
                 
             </main>
         </div>
-        <script src="javascript/script.js"></script>
+        <script src="javascript/homepage.js"></script>
     </body>
 </html>
