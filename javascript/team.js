@@ -13,7 +13,7 @@ const onClick = () => {
         timesClicked++;
         hamburger.classList.toggle('is-active');
         hamburger.style.position = 'fixed';
-        heading.style.paddingLeft = '50.25rem';
+        heading.style.paddingLeft = '59.1rem';
         menuOverlay.style.left = "0";
         menuOverlay.style.width = '20%';
         menuOverlay.style.opacity = '0.9';
@@ -24,7 +24,7 @@ const onClick = () => {
         timesClicked--;
         hamburger.classList.toggle('is-active');
         hamburger.style.position = 'inherit';
-        heading.style.paddingLeft = '0';
+        heading.style.paddingLeft = '4rem';
         menuOverlay.style.border = 'none';
         menuOverlay.style.left = "80%";
         menuOverlay.style.width = '0%';

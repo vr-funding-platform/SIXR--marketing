@@ -192,7 +192,9 @@ footer {
 }
 .menu-overlay .menu-items a {
   text-decoration: none;
-  color: #ffffff;
+  color: #08c6e7;
+  font-weight: bold;
+  margin: -5rem 0;
 }
 .menu-overlay .menu-items a:hover {
   color: #ffffff;

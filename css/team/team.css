@@ -207,7 +207,9 @@ header h1 {
 }
 .menu-overlay .menu-items a {
   text-decoration: none;
-  color: #057285;
+  color: #08c6e7;
+  font-weight: bold;
+  margin: -5rem 0;
 }
 .menu-overlay .menu-items a:hover {
   color: #ffffff;
