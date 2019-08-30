@@ -235,6 +235,13 @@ main {
   padding: 5%;
   overflow: hidden;
 }
+main .company-logo {
+  height: 10rem;
+  width: 10rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 main .now {
   color: #08c6e7;
   font-size: 5rem;
@@ -256,7 +263,7 @@ main .button {
   border: 4px solid #08c6e7;
   border-radius: 2.5rem;
   padding: 3.1rem 13rem;
-  font-size: 2.7rem;
+  font-size: 2.8rem;
   margin-bottom: 3%;
   text-align: center;
   color: white;
@@ -270,7 +277,7 @@ main .button {
 }
 main .home-text {
   margin-bottom: 1.5%;
-  font-size: 3.5rem;
+  font-size: 3.6rem;
   text-align: center;
 }
 @media (max-width: 500px) {
@@ -280,13 +287,7 @@ main .home-text {
   }
 }
 main .realblack {
-  font-size: 3.5rem;
-  font-weight: bold;
-}
-.company-logo {
-  height: 10rem;
-  width: 10rem;
-  position: absolute;
-  left: 0;
-  top: 0;
+  font-size: 4.6rem;
+  font-weight: bolder;
+  line-height: 7.8rem;
 }
