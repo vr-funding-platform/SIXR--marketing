@@ -137,6 +137,13 @@ body {
   font-family: 'Orbitron';
   color: #08c6e7;
 }
+@media (max-width: 800px) {
+  html,
+  body {
+    background: center / cover no-repeat url('../../img/sixr-bg-image.jpg');
+    min-height: 100%;
+  }
+}
 h1,
 h2,
 h3,
@@ -174,8 +181,36 @@ header .company-logo {
   width: 10rem;
 }
 header h1 {
+  text-align: center;
   padding-top: 0.5rem;
-  padding-right: 3rem;
+  padding-left: 3.25rem;
+}
+.menu-overlay {
+  width: 0%;
+  left: 80%;
+  height: 100%;
+  position: fixed;
+  padding: 4rem;
+}
+.menu-overlay button {
+  position: absolute;
+  left: 75%;
+}
+.menu-overlay .menu-items {
+  color: #ffffff;
+  font-size: 4rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.menu-overlay .menu-items a {
+  text-decoration: none;
+  color: #057285;
+}
+.menu-overlay .menu-items a:hover {
+  color: #ffffff;
 }
 .fullscreen-bg {
   position: fixed;
@@ -221,6 +256,7 @@ main {
 @media (max-width: 500px) {
   main {
     flex-direction: column;
+    align-items: center;
   }
 }
 main .team-member {
@@ -239,8 +275,8 @@ main .team-member h2 {
 }
 main .team-member .profile-pic {
   margin: 2% auto 0 auto;
-  height: 20.2rem;
-  width: 20.2rem;
+  height: 26rem;
+  width: 26rem;
   border: 6.5px solid #057285;
   border-radius: 60px;
 }
@@ -251,7 +287,9 @@ main .team-member .taylor {
   background: center / cover no-repeat url('../../img/taylor.png');
 }
 main .team-member .jake {
-  background: center / cover no-repeat url('../../img/jake.png');
+  background: center / cover no-repeat url('../../img/jake4.png');
+  background-position-y: 40%;
+  background-size: 117%;
 }
 main .team-member .chris {
   background: center / cover no-repeat url('../../img/chris.jpg');
@@ -282,7 +320,7 @@ main .team-member .about-wrap .social-wrap a {
   color: #ffffff;
 }
 main .team-member .about-wrap .social-wrap a:hover {
-  color: #000;
+  color: #08c6e7;
 }
 footer {
   display: flex;

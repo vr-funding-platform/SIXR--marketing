@@ -2,22 +2,14 @@ main {
     display:flex;
     flex-direction:column;
     align-items: center;
-    justify-content: space-around;
-    height: 100vh;
-    padding: 5%;
+    justify-content: space-between;
+    height: 90vh;
+    padding-bottom: 5%;
     overflow: hidden;
-
-
-    .now {
-        color:@space-blue;
-        font-size: 5.0rem;
-        @media @phone {
-            font-size:3.0rem;
-        }
-    }
 
     .logo {
         width: 50%;
+        margin-bottom: -5rem;
         @media @phone {
             width:60%;
         }
@@ -26,20 +18,31 @@ main {
     .button {
         .border();
         border-radius:2.5rem;
-        padding: 3.1rem 13.0rem;
-        font-size: 2.7rem;
-        margin-bottom: 3%;
-        text-align: center;
-        color:white;
+        padding: 2.5rem 13.0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         @media @phone {
             font-size:3rem;
             border-radius:1.5rem;
             padding:2.0rem 10.0rem;
         }
+
+        p {
+            font-size: 3rem;
+            // margin-bottom: 3%;
+            color:white;
+
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+        }
     }
     
     .home-text {
-        margin-bottom: 1.5%;
+        // margin-bottom: 1.5%;
         font-size:3.5rem;
         text-align: center;
         @media @phone {
@@ -50,13 +53,6 @@ main {
     .realblack {
         font-size:3.5rem;
         font-weight:bold;
+        text-shadow: 0 0 1rem @space-blue;
     }
 }
-
-  .company-logo{
-        height: 10rem;
-        width: 10rem;
-        position:absolute;
-        left:0;
-        top:0;
-    } 

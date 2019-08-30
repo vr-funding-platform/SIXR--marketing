@@ -1,11 +1,19 @@
 main {
-    margin-top:10%;
+    margin-top:6%;
     margin-bottom:10%;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
     align-items:center;
     padding:0rem 22rem;
+
+    @media @tablet {
+        padding: 0rem 10rem;
+    }
+
+    @media @phone {
+        padding: 0rem 2rem;
+    }
         
     
     
@@ -29,4 +37,13 @@ main {
         }
     }
 
+}
+
+.img-wrap {
+    text-align: center;
+    background: @space-black;
+
+    .vr-img {
+        width: 70%;
+    }
 }
