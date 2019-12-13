@@ -1,42 +1,58 @@
-.menu-overlay {
+.menu-container{
     
-    
-    width: 20%;
-    height: 100%;
-    left: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    display: none;
     position: absolute;
-    padding: 4rem;
-    z-index: 33;
 
-    button {
-        position: fixed;
-        left: 94%;
-        z-index: 33;
-    }
+    .menu-overlay {
+    
+    
+        width: 20%;
+        height: 100%;
+        padding: 4rem;
+        border-left: 1px solid @space-blue;
+        background: #000;
+        opacity: 0.9;
 
-    .menu-items {
-        display: none;
-        color: @space-white;
-        font-size: 4rem;
-        display: none;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-
-        li {
-            padding: 8rem 0;
+        @media @tablet{
+            width: 30%;
         }
 
-        a {
-            text-decoration: none;
-            color: @space-blue;
-            font-weight: bold;
-            margin: -5rem 0;
+        @media @phone{
+            width: 100%;
+            border: none;
+            align-items: center;
+            opacity: 1;
         }
-
-        a:hover {
+    
+        .menu-items {
+            width: 100%;
+            display: none;
             color: @space-white;
+            font-size: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+    
+            li {
+                padding: 8rem 0;
+            }
+    
+            a {
+                text-decoration: none;
+                color: @space-blue;
+                font-weight: bold;
+                margin: -5rem 0;
+            }
+    
+            a:hover {
+                color: @space-white;
+            }
+    
         }
-
     }
 }
+
