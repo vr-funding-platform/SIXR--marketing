@@ -180,7 +180,6 @@ header .company-logo {
 header h1 {
   text-align: center;
   padding-top: 0.5rem;
-  padding-left: 3.25rem;
   font-size: 5.2rem;
   color: #08c6e7;
   font-family: 'Orbitron';
@@ -229,31 +228,54 @@ header h1 {
     left: -100%;
   }
 }
-.menu-overlay {
+.menu-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  display: none;
+  position: absolute;
+}
+.menu-container .menu-overlay {
   width: 20%;
   height: 100%;
-  left: 80%;
-  position: fixed;
   padding: 4rem;
+  border-left: 1px solid #08c6e7;
+  background: #000;
+  opacity: 0.9;
 }
-.menu-overlay .menu-items {
+@media (max-width: 800px) {
+  .menu-container .menu-overlay {
+    width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .menu-container .menu-overlay {
+    width: 100%;
+    border: none;
+    align-items: center;
+    opacity: 1;
+  }
+}
+.menu-container .menu-overlay .menu-items {
+  width: 100%;
+  display: none;
   color: #ffffff;
   font-size: 4rem;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-.menu-overlay .menu-items li {
+.menu-container .menu-overlay .menu-items li {
   padding: 8rem 0;
 }
-.menu-overlay .menu-items a {
+.menu-container .menu-overlay .menu-items a {
   text-decoration: none;
   color: #08c6e7;
   font-weight: bold;
   margin: -5rem 0;
 }
-.menu-overlay .menu-items a:hover {
+.menu-container .menu-overlay .menu-items a:hover {
   color: #ffffff;
 }
 main {
