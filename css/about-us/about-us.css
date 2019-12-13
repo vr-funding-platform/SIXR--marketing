@@ -200,6 +200,12 @@ footer {
     opacity: 1;
   }
 }
+.menu-container .menu-overlay a {
+  text-decoration: none;
+  color: #08c6e7;
+  font-weight: bold;
+  margin: -5rem 0;
+}
 .menu-container .menu-overlay .menu-items {
   width: 100%;
   display: none;

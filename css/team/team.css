@@ -210,6 +210,12 @@ header h1 {
     width: 30%;
   }
 }
+.menu-container .menu-overlay a {
+  text-decoration: none;
+  color: #08c6e7;
+  font-weight: bold;
+  margin: -5rem 0;
+}
 @media (max-width: 500px) {
   .menu-container .menu-overlay {
     width: 100vw;
